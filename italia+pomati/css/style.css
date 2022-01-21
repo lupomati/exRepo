@@ -1,0 +1,345 @@
+/*INDEXhtml*/
+*{
+margin: 0px;
+padding: 0px;
+}
+
+
+
+
+/*HEADER*/
+
+header h2{
+text-align: center;
+font-size: 40px;
+padding: 15px;
+font-family: 'Mea Culpa', cursive;
+}
+header{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+height: 100px;
+background-color: rgb(235, 192, 113);
+}
+
+/*NAV*/
+
+nav{
+background-color: rgb(203, 249, 255);
+text-align: center;
+height: 50px;
+}
+nav ul{
+list-style: none;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+nav ul li{
+display: inline-block;
+font-size: 20px;
+width: 10%;
+}
+nav ul li a{
+text-decoration: none;
+display: block;
+padding-top: 10px;
+height: 40px;
+}
+nav ul li a:hover{
+background-color: rgb(96, 16, 116);
+color: white;
+}
+
+/*MAIN*/
+#mainindex{
+display: grid;
+grid-template-rows: 550px 625px;
+grid-template-areas: "caja1"
+                     "caja2";
+}
+
+.caja1{
+grid-area: caja1;
+text-align: center;
+height: 550px;
+background-image: url(https://www.milanturismo.com/wp-content/uploads/norte-de-italia.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: top right;
+background-attachment: fixed;
+}
+.caja1 h2{
+color: rgb(255, 255, 255);
+font-size: 50px;
+font-family: 'Outfit', sans-serif;
+}
+.caja1 p{
+color: rgb(255, 255, 255);
+font-size: 20px;
+font-family: 'Outfit', sans-serif;
+}
+.caja2{
+grid-area: caja2;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+background-color: lightblue;
+height: 625px;
+}
+.cajahome{
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+text-align: center;
+border: solid;
+width: 800px;
+background-color: white;
+height: 620px;
+}
+.cajahome h2{
+font-family: 'Merienda', cursive;
+}
+.cajahome p{
+font-family: 'Exo 2', sans-serif;
+}
+
+/*FOOTER*/
+
+footer{
+text-align: center;
+background-color: rgb(226, 204, 81);
+height: 70px;
+width: 100vw;
+}
+footer p{
+padding-top: 20px;
+}
+@media only screen and ( max-width:450px){
+
+    nav ul li{
+        display: inline-block;
+        font-size: 15px;
+        width: 100%;
+    }
+    .caja1{
+        width: 412px;
+        background-size: cover;
+    }
+    .cajahome{
+        width: 80%;
+    }
+    .cajahome h2{
+    font-size: 13px;
+    }
+    .cajahome p{
+        font-size: 10px;
+    }
+
+}
+    
+
+
+
+/*COMIDAhtml*/
+/*MAIN*/
+#comidaTitulos{
+text-align: center;
+font-family: 'Oooh Baby', cursive;
+font-size: 50px;
+}
+.contenedorcomida{
+text-align: center;
+width: 900px;
+margin-left: 500px;
+padding-top: 70px;
+background-color: white;
+height: 2000px;
+}
+.contenedorcomida p{
+font-size: 20px;
+}
+.contenedorcomida img{
+width: 100%;
+}
+#maincomida{
+height: 3000px;
+background-color: rgb(245, 244, 244);
+}
+
+
+/*HISTORIAhtml*/
+/*MAIN*/
+#mainhistoria{
+height: 2000px;
+background-color: rgb(232, 245, 216);
+}
+.historiacontenido{
+margin-left: 80px;
+margin-right: 80px;
+height: 2000px;
+}
+/*TITULOS Y SUBTITULOS*/
+#historiaTitulo{
+text-align: center;
+font-family: 'Oooh Baby', cursive;
+font-size: 50px;
+}
+.tituloshistoria{
+font-family: 'Josefin Sans', sans-serif;
+}
+.subtituloshistoria{
+font-family: 'Oswald', sans-serif
+}
+/*TEXTO*/
+.textoshistoria{
+width: 80%;
+font-family: 'DM Sans', sans-serif;
+}
+/*IMG*/
+.prehistoriaimagen{
+position: absolute;
+right: 80px;
+top: 280px;
+width: 320px;
+height: 260px;
+}
+.imperioRomanoImg{
+position: absolute;
+right: 80px;
+width: 500px;
+height: 260px;
+top: 1080px;
+}
+.romuloyremo{
+height: 240px;
+position: absolute;
+right: 80px;
+top: 660px;
+width: 320px;
+}
+/*CAJAS*/
+.imperioromanocaja{
+width: 1400px;
+}
+
+
+/*FOOTER*/
+
+
+/*CONTACTOhtml*/
+/*MAIN*/
+#maincontacto{
+display: grid;
+grid-template-columns: 70% 30%;
+grid-template-rows: 60px auto;
+grid-template-areas: "a1 a2"
+                     "a3 a2";
+justify-items: center;
+height: 700px;
+background-color: rgb(214, 253, 198);
+}
+/*CAJAS*/
+.cajacontacto{
+width: 50%;
+}
+.cajaformulario{
+width: 100%;
+margin-top: 50px;
+}
+#footercontacto{
+height: 80px;
+}
+/*TEXTO*/
+#contactoTitulo{
+grid-area: a1;
+text-align: left;
+font-family: 'Oooh Baby', cursive;
+font-size: 50px;
+}
+.contactoParrafo{
+grid-area: a3;
+margin-top: 30px;
+font-size: 23px;
+font-family: 'Noto Sans', sans-serif;
+}
+.formulariotexto{
+font-size: 17px;
+font-family: 'Quicksand', sans-serif;
+}
+/*INPUT*/
+.inputcontacto{
+padding: 10px;
+width: 70%;
+}
+#comentariocontacto{
+padding: 10px;
+width: 70%;
+height: 110px;
+}
+#inputenviar{
+display: block;
+margin-top: 20px;
+padding: 10px;
+font-size: 15px;
+width: 150px;
+}
+@media only screen and ( max-width:450px){
+    #contactoTitulo{
+        font-size: 30px;
+    }
+    .contactoParrafo{
+        font-size: 15px;
+    }
+    #inputenviar{
+    width: 80%;
+    }
+}
+
+/*LUGAREShtml*/
+/*MAIN*/
+#mainlugares{
+height: 3000px;
+background-color: rgb(245, 244, 244);
+margin-top: -38px;
+}
+.contenedorlugares{
+text-align: center;
+width: 1200px;
+margin-left: 350px;
+padding-top: 70px;
+padding-left: 50px;
+padding-right: 50px;
+background-color: white;
+height: 2000px;
+margin-top: 38px;
+}
+/*TITULOS Y SUBTITULOS*/
+#titulolugares{
+text-align: center;
+font-family: 'Oooh Baby', cursive;
+font-size: 50px;
+}
+.subtituloslugares{
+font-family: 'Merienda', cursive;
+}
+.subtituloslugares2{
+font-family: 'Josefin Sans', sans-serif;
+}
+/*TEXTO*/
+.textointroduccion{
+font-family: 'DM Sans', sans-serif;
+text-align: center;
+}
+.textolugares{
+font-family: 'DM Sans', sans-serif;
+text-align: center;
+font-size: 15px;
+}
+/*IMG*/
+.coliseoimagen{
+width: 70%;
+height: 400px;
+}
+/*CAJAS*/
