@@ -115,6 +115,7 @@ width: 100vw;
 }
 footer p{
 padding-top: 20px;
+font-family: 'Bitter', serif;
 }
 @media only screen and ( max-width:450px){
 
@@ -172,56 +173,193 @@ background-color: rgb(245, 244, 244);
 /*HISTORIAhtml*/
 /*MAIN*/
 #mainhistoria{
-height: 2000px;
-background-color: rgb(232, 245, 216);
+height: 4480px;
+background-color: #f4f4f4;
 }
 .historiacontenido{
-margin-left: 80px;
-margin-right: 80px;
-height: 2000px;
+background-color: #ffff;
+margin-left: 60px;
+margin-right: 60px;
+padding-left: 20px;
+padding-right: 20px;
+height: 4400px;
 }
+/*CAJAS*/
+.prehistoriacaja{
+display: grid;
+grid-template-columns: auto 400px;
+grid-template-rows: 20px auto;
+grid-template-areas: "titulo imagen"
+                    "parrafo imagen";
+}
+.antiguaromacaja{
+display: grid;
+grid-template-columns: auto 450px;
+grid-template-rows: 20px 300px 200px 340px;
+grid-template-areas: "titulo titulo"
+                     "romulo imagen"
+                     "monarquia monarquia"
+                     "imperio imagen2";
+grid-row-gap: 10px;
+}
+.romulocaja{
+grid-area: romulo;
+}
+.monarquiacaja{
+grid-area: monarquia;
+}
+.imperioromanocaja{
+grid-area: imperio;
+}
+.renacimientocaja{
+height: 700px;
+display: grid;
+grid-template-columns: 300px auto 400px;
+grid-template-rows: 20px 300px 340px;
+grid-template-areas: "titulo titulo titulo"
+                     "imagen texto texto"
+                     "texto2 texto2 imagen2";
+justify-items: center;
+}
+.unificacioncaja{
+display: grid;
+grid-template-columns: 300px auto;
+grid-template-rows: 20px 200px 300px;
+grid-template-areas: "titulo titulo"
+                     "imagen texto"
+                     "imagen texto2";
+grid-row-gap: 20px;
+}
+.fascismocaja{
+display: grid;
+grid-template-columns: 300px auto 360px;
+grid-template-rows: 20px 340px 600px;
+grid-template-areas: "titulo titulo titulo"
+                     "texto texto imagen"
+                     "imagen2 texto2 imagen";
+justify-items: center;
+align-items: center;
+}
+.republicacaja{
+display: grid;
+grid-template-columns: auto 400px;
+grid-template-rows: 20px 270px 270px;
+grid-template-areas: "titulo titulo"
+                     "texto imagen"
+                     "texto2 imagen";
+}
+
 /*TITULOS Y SUBTITULOS*/
 #historiaTitulo{
 text-align: center;
 font-family: 'Oooh Baby', cursive;
 font-size: 50px;
 }
-.tituloshistoria{
+#prehistoriatitulo{
 font-family: 'Josefin Sans', sans-serif;
 }
+#antiguaromatitulo{
+font-family: 'Josefin Sans', sans-serif;
+}
+#renacimientotitulo{
+font-family: 'Josefin Sans', sans-serif;
+grid-area: titulo;
+}
+#unificaciontitulo{
+font-family: 'Josefin Sans', sans-serif;
+grid-area: titulo;
+justify-self: center;
+}
+#fascismotitulo{
+font-family: 'Josefin Sans', sans-serif;
+grid-area: titulo;
+}
+#republicatitulo{
+font-family: 'Josefin Sans', sans-serif;
+grid-area: titulo;
+}
 .subtituloshistoria{
-font-family: 'Oswald', sans-serif
+font-family: 'Exo 2', sans-serif;
 }
 /*TEXTO*/
 .textoshistoria{
 width: 80%;
-font-family: 'DM Sans', sans-serif;
+font-family: 'Quicksand', sans-serif;
+}
+.renacimientoparrafo{
+font-family: 'Quicksand', sans-serif;
+grid-area: texto;
+}
+.italiaespañolaparrafo{
+font-family: 'Quicksand', sans-serif;
+grid-area: texto2;
+margin-top: 20px;
+margin-left: 20px;
+}
+.unificacionparrafo{
+font-family: 'Quicksand', sans-serif;
+grid-area: texto;
+}
+.unificacionparrafo2{
+font-family: 'Quicksand', sans-serif;
+grid-area: texto2;
+}
+.fascismoparrafo{
+font-family: 'Quicksand', sans-serif;
+grid-area: texto;
+}
+.fascismoparrafo2{
+font-family: 'Quicksand', sans-serif;
+grid-area: texto2;
+}
+.republicaparrafo{
+font-family: 'Quicksand', sans-serif;
+grid-area: texto;
+}
+.republicaparrafo2{
+font-family: 'Quicksand', sans-serif;
+grid-area: texto2;
 }
 /*IMG*/
 .prehistoriaimagen{
-position: absolute;
-right: 80px;
-top: 280px;
+grid-area: imagen;
+align-self: center;
 width: 320px;
 height: 260px;
-}
-.imperioRomanoImg{
-position: absolute;
-right: 80px;
-width: 500px;
-height: 260px;
-top: 1080px;
 }
 .romuloyremo{
-height: 240px;
-position: absolute;
-right: 80px;
-top: 660px;
-width: 320px;
+grid-area: imagen;
+height: 280px;
+width: 400px;
 }
-/*CAJAS*/
-.imperioromanocaja{
-width: 1400px;
+.imperioRomanoImg{
+grid-area: imagen2;
+align-self: top;
+width: 430px;
+height: 280px;
+}
+.monalisaimg{
+height: 300px;
+width: 260px;
+}
+.napoleonimg{
+height: 240px;
+grid-area: imagen2;
+}
+.garibaldiimg{
+height: 390px;
+width: 290px;
+}
+.mussoliniimg{
+grid-area: imagen;
+height: 390px;
+width: 290px;
+}
+.gasperiimg{
+grid-area: imagen;
+height: 390px;
+width: 290px;
+justify-self: center;
 }
 
 
