@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Exo+2:wght@300&family=Josefin+Sans:wght@300&family=Mea+Culpa&family=Merienda&family=Noto+Sans&family=Oooh+Baby&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="js/wow.min.js"></script>
     <title>Bella Italia</title>
 </head>
 <body>
@@ -35,11 +37,11 @@
     </nav>
     <main id="mainindex">
         <div class="caja1">
-            <h2>¿Piensas en visitar Italia?</h2>
-            <p>Aquí encontrarás todo lo que puedes y te recomendamos hacer cuando estes allá!</p>
+            <h2 class="animate__animated animate__bounceInDown">¿Piensas en visitar Italia?</h2>
+            <p class="animate__animated animate__bounceInDown">Aquí encontrarás todo lo que puedes y te recomendamos hacer cuando estes allá!</p>
         </div> 
         <div class="caja2">
-            <div class="cajahome">
+            <div class="animate__animated animate__fadeInUp cajahome">
                 <h2>Lo que necesitas saber para visitar Italia</h2>
                 <p>¿Estás planeando una visita a Italia y querés empezar a saber más de tu destino? ¡Acá tenemos para vos un artículo con todo lo que necesitás saber antes de viajar a Italia!</p>
                     <br>
@@ -56,5 +58,8 @@
     <footer id="footerindex">
         <p>Este sitio web fue creado y desarrollado por Luciano Pomati.</p>
     </footer>
+<script>
+   new WOW().init();
+</script>
 </body>
 </html>
