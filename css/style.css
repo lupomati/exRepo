@@ -31,6 +31,7 @@ text-align: center;
 height: 50px;
 }
 nav ul{
+height: 100%;
 list-style: none;
 display: flex;
 flex-direction: row;
@@ -45,38 +46,42 @@ nav ul li a{
 text-decoration: none;
 display: block;
 padding-top: 10px;
-height: 40px;
+height: 100%;
 }
 nav ul li a:hover{
 background-color: rgb(96, 16, 116);
 color: white;
+height: 100%;
 }
 
 /*MAIN*/
 #mainindex{
 display: grid;
-grid-template-rows: 550px 625px;
+grid-template-rows: 550px 625px 800px;
 grid-template-areas: "caja1"
-                     "caja2";
+                     "caja2"
+                     "caja3";
 }
 
 .caja1{
 grid-area: caja1;
 text-align: center;
 height: 550px;
-background-image: url(https://www.milanturismo.com/wp-content/uploads/norte-de-italia.jpg);
+background-image: url(https://www.turitalia.com/fotos/ciudades/salento-brindisi.jpg);
 background-repeat: no-repeat;
-background-size: cover;
-background-position: top right;
+background-size: contain;
+background-position: top;
 background-attachment: fixed;
 }
 .caja1 h2{
-color: rgb(255, 255, 255);
+margin-top: 10px;
+color: rgb(168, 23, 197);
 font-size: 50px;
 font-family: 'Outfit', sans-serif;
 }
 .caja1 p{
-color: rgb(255, 255, 255);
+margin-top: 5px;
+color: rgb(144, 13, 184);
 font-size: 20px;
 font-family: 'Outfit', sans-serif;
 }
@@ -92,17 +97,42 @@ height: 625px;
 display: flex;
 flex-direction: column;
 justify-content: space-evenly;
+margin-top: 10px;
 text-align: center;
 border: solid;
 width: 800px;
 background-color: white;
-height: 620px;
+height: 600px;
 }
 .cajahome h2{
 font-family: 'Merienda', cursive;
+font-size: 25px;
+margin-top: 10px;
 }
 .cajahome p{
 font-family: 'Exo 2', sans-serif;
+font-size: 15px;
+}
+.caja3{
+height: 800px;
+grid-area: caja3;
+display: grid;
+justify-items: center;
+align-items: center;
+background-color: rgb(209, 194, 174);
+}
+.carousel{
+width: 1400px;
+height: 700px;
+}
+.primeritem{
+height: 700px;
+}
+.segundoitem{
+height: 700px;
+}
+.terceritem{
+height: 700px;
 }
 
 /*FOOTER*/
@@ -125,8 +155,14 @@ font-family: 'Bitter', serif;
         width: 100%;
     }
     .caja1{
-        width: 412px;
+        width: 100%;
         background-size: cover;
+    }
+    .caja1 h2{
+    font-size: 35px;
+    }
+    .caja1 p{
+    font-size: 15px;
     }
     .cajahome{
         width: 80%;
@@ -173,7 +209,7 @@ background-color: rgb(245, 244, 244);
 /*HISTORIAhtml*/
 /*MAIN*/
 #mainhistoria{
-height: 4480px;
+height: 4650px;
 background-color: #f4f4f4;
 }
 .historiacontenido{
@@ -182,20 +218,20 @@ margin-left: 60px;
 margin-right: 60px;
 padding-left: 20px;
 padding-right: 20px;
-height: 4400px;
+height: 4500px;
 }
 /*CAJAS*/
 .prehistoriacaja{
 display: grid;
 grid-template-columns: auto 400px;
-grid-template-rows: 20px auto;
+grid-template-rows: 30px auto;
 grid-template-areas: "titulo imagen"
                     "parrafo imagen";
 }
 .antiguaromacaja{
 display: grid;
 grid-template-columns: auto 450px;
-grid-template-rows: 20px 300px 200px 340px;
+grid-template-rows: 30px 350px 200px 420px;
 grid-template-areas: "titulo titulo"
                      "romulo imagen"
                      "monarquia monarquia"
@@ -215,16 +251,17 @@ grid-area: imperio;
 height: 700px;
 display: grid;
 grid-template-columns: 300px auto 400px;
-grid-template-rows: 20px 300px 340px;
+grid-template-rows: 30px 380px 380px;
 grid-template-areas: "titulo titulo titulo"
                      "imagen texto texto"
                      "texto2 texto2 imagen2";
 justify-items: center;
 }
 .unificacioncaja{
+margin-top: 90px;
 display: grid;
 grid-template-columns: 300px auto;
-grid-template-rows: 20px 200px 300px;
+grid-template-rows: 30px 200px 300px;
 grid-template-areas: "titulo titulo"
                      "imagen texto"
                      "imagen texto2";
@@ -233,7 +270,7 @@ grid-row-gap: 20px;
 .fascismocaja{
 display: grid;
 grid-template-columns: 300px auto 360px;
-grid-template-rows: 20px 340px 600px;
+grid-template-rows: 30px 320px 500px;
 grid-template-areas: "titulo titulo titulo"
                      "texto texto imagen"
                      "imagen2 texto2 imagen";
@@ -243,7 +280,7 @@ align-items: center;
 .republicacaja{
 display: grid;
 grid-template-columns: auto 400px;
-grid-template-rows: 20px 270px 270px;
+grid-template-rows: 30px 270px 270px;
 grid-template-areas: "titulo titulo"
                      "texto imagen"
                      "texto2 imagen";
@@ -253,7 +290,8 @@ grid-template-areas: "titulo titulo"
 #historiaTitulo{
 text-align: center;
 font-family: 'Oooh Baby', cursive;
-font-size: 50px;
+font-size: 55px;
+margin-top: 20px;
 }
 #prehistoriatitulo{
 font-family: 'Josefin Sans', sans-serif;
@@ -280,6 +318,8 @@ grid-area: titulo;
 }
 .subtituloshistoria{
 font-family: 'Exo 2', sans-serif;
+font-size: 20px;
+font-weight: bold;
 }
 /*TEXTO*/
 .textoshistoria{
@@ -289,6 +329,7 @@ font-family: 'Quicksand', sans-serif;
 .renacimientoparrafo{
 font-family: 'Quicksand', sans-serif;
 grid-area: texto;
+margin-top: 30px;
 }
 .italiaespañolaparrafo{
 font-family: 'Quicksand', sans-serif;
@@ -320,38 +361,53 @@ grid-area: texto;
 font-family: 'Quicksand', sans-serif;
 grid-area: texto2;
 }
-/*IMG*/
-.prehistoriaimagen{
+/*CARD*/
+.primercard{
 grid-area: imagen;
 align-self: center;
-width: 320px;
-height: 260px;
 }
-.romuloyremo{
+.segundocard{
 grid-area: imagen;
-height: 280px;
-width: 400px;
+align-self: center;
 }
-.imperioRomanoImg{
+.tercerocard{
 grid-area: imagen2;
 align-self: top;
-width: 430px;
-height: 280px;
+justify-self: left;
+}
+.cuartocard{
+grid-area: imagen;
+align-self: top;
+}
+.quintocard{
+grid-area: imagen2;
+}
+.sextocard{
+grid-area: imagen;
+}
+.septimocard{
+grid-area: imagen;
+}
+.octavocard{
+grid-area: imagen2;
+}
+/*IMG*/
+.imperioromanoimg{
+height: 300px;
+width: 400px;
 }
 .monalisaimg{
-height: 300px;
-width: 260px;
+height: 280px;
+width: 100%;
 }
 .napoleonimg{
-height: 240px;
-grid-area: imagen2;
+height: 200px;
 }
 .garibaldiimg{
 height: 390px;
 width: 290px;
 }
 .mussoliniimg{
-grid-area: imagen;
 height: 390px;
 width: 290px;
 }
